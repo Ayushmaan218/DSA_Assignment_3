@@ -12,13 +12,12 @@ public class q8 {
     } 
     public static int reverseDigit(int number){
         if(number<10){
+            System.out.print(number);
             return number;
         }
-        int lastDigit = number % 10;
-        int remainingDigits = number / 10;
-        int reversedNumber = reverseDigit(remainingDigits);
-        int numOfDigits = (int) Math.log10(reversedNumber) + 1;
-        reversedNumber += lastDigit * Math.pow(10, numOfDigits);
-        return reversedNumber;
+        else{
+            System.out.print(number%10);
+            return reverse(number/10);
+        }
     }
 }
