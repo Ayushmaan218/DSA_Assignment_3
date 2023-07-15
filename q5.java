@@ -20,8 +20,11 @@ public class q5 {
     }
     public static <T> int count(T[] array,T item){
         int count = 0;
-        for(T element : array){
-            if(element.equals(item)){
+        for(int i =0;i<array.length;i++){
+            if(array[i]==item){
+                return count;
+            }
+            else{
                 count++;
             }
         }
