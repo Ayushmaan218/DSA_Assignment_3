@@ -7,8 +7,8 @@ public class q8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        int rev = reverseDigit(num);
-        System.out.println("Reverse of "+num+" is"+rev);
+        System.out.print("Reverse of "+num+" is:");
+        int rev = reverse(num);
     } 
     public static int reverseDigit(int number){
         if(number<10){
